@@ -13,6 +13,23 @@
 		D377FE9A2D5105A3000540B4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D377FE992D5105A3000540B4 /* Base */; };
 		D377FE9C2D5105A5000540B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D377FE9B2D5105A5000540B4 /* Assets.xcassets */; };
 		D377FE9F2D5105A5000540B4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D377FE9E2D5105A5000540B4 /* Base */; };
+		D377FEB02D5106E7000540B4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D377FEAE2D5106E7000540B4 /* ProfileViewController.swift */; };
+		D377FEB12D5106E7000540B4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D377FEAF2D5106E7000540B4 /* ProfileViewController.xib */; };
+		D377FEB42D510B4B000540B4 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D377FEB22D510B4B000540B4 /* AlbumTableViewCell.swift */; };
+		D377FEB52D510B4B000540B4 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D377FEB32D510B4B000540B4 /* AlbumTableViewCell.xib */; };
+		D377FEB92D510BFA000540B4 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D377FEB72D510BFA000540B4 /* AlbumViewController.swift */; };
+		D377FEBA2D510BFA000540B4 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D377FEB82D510BFA000540B4 /* AlbumViewController.xib */; };
+		D377FEBD2D510CB1000540B4 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D377FEBB2D510CB1000540B4 /* AlbumCollectionViewCell.swift */; };
+		D377FEBE2D510CB1000540B4 /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D377FEBC2D510CB1000540B4 /* AlbumCollectionViewCell.xib */; };
+		D3DEACD42D5339F2009B80E9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEACD32D5339F2009B80E9 /* UserModel.swift */; };
+		D3DEACD62D533A1A009B80E9 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEACD52D533A1A009B80E9 /* RemoteDataSource.swift */; };
+		D3DEACD92D533AB3009B80E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D3DEACD82D533AB3009B80E9 /* Alamofire */; };
+		D3DEACDB2D533DA8009B80E9 /* AlbumListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEACDA2D533DA8009B80E9 /* AlbumListModel.swift */; };
+		D3DEACDD2D533E5A009B80E9 /* AlbumPhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEACDC2D533E5A009B80E9 /* AlbumPhotosModel.swift */; };
+		D3DEACDF2D533EA0009B80E9 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEACDE2D533EA0009B80E9 /* ProfileViewModel.swift */; };
+		D3DEACE12D533EDB009B80E9 /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEACE02D533EDB009B80E9 /* RemoteDataSourceProtocol.swift */; };
+		D3DEACE32D534F32009B80E9 /* AlbumScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEACE22D534F32009B80E9 /* AlbumScreenViewModel.swift */; };
+		D3DEACE62D535631009B80E9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D3DEACE52D535631009B80E9 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +41,21 @@
 		D377FE9B2D5105A5000540B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D377FE9E2D5105A5000540B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D377FEA02D5105A5000540B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D377FEAE2D5106E7000540B4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D377FEAF2D5106E7000540B4 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		D377FEB22D510B4B000540B4 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		D377FEB32D510B4B000540B4 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
+		D377FEB72D510BFA000540B4 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		D377FEB82D510BFA000540B4 /* AlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
+		D377FEBB2D510CB1000540B4 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		D377FEBC2D510CB1000540B4 /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		D3DEACD32D5339F2009B80E9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D3DEACD52D533A1A009B80E9 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		D3DEACDA2D533DA8009B80E9 /* AlbumListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListModel.swift; sourceTree = "<group>"; };
+		D3DEACDC2D533E5A009B80E9 /* AlbumPhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPhotosModel.swift; sourceTree = "<group>"; };
+		D3DEACDE2D533EA0009B80E9 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D3DEACE02D533EDB009B80E9 /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
+		D3DEACE22D534F32009B80E9 /* AlbumScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3DEACE62D535631009B80E9 /* Kingfisher in Frameworks */,
+				D3DEACD92D533AB3009B80E9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +90,10 @@
 		D377FE912D5105A3000540B4 /* BostaTask */ = {
 			isa = PBXGroup;
 			children = (
+				D377FEAD2D5106B3000540B4 /* DataSource */,
+				D377FEAC2D5106AA000540B4 /* Models */,
+				D377FEA72D51065C000540B4 /* Album Screen */,
+				D377FEA62D51064B000540B4 /* Profile Screen */,
 				D377FE922D5105A3000540B4 /* AppDelegate.swift */,
 				D377FE942D5105A3000540B4 /* SceneDelegate.swift */,
 				D377FE962D5105A3000540B4 /* ViewController.swift */,
@@ -65,6 +103,81 @@
 				D377FEA02D5105A5000540B4 /* Info.plist */,
 			);
 			path = BostaTask;
+			sourceTree = "<group>";
+		};
+		D377FEA62D51064B000540B4 /* Profile Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D377FEAB2D51069E000540B4 /* ViewModel */,
+				D377FEAA2D510696000540B4 /* View */,
+			);
+			path = "Profile Screen";
+			sourceTree = "<group>";
+		};
+		D377FEA72D51065C000540B4 /* Album Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D377FEA92D510677000540B4 /* ViewModel */,
+				D377FEA82D51066E000540B4 /* View */,
+			);
+			path = "Album Screen";
+			sourceTree = "<group>";
+		};
+		D377FEA82D51066E000540B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D377FEB72D510BFA000540B4 /* AlbumViewController.swift */,
+				D377FEB82D510BFA000540B4 /* AlbumViewController.xib */,
+				D377FEBB2D510CB1000540B4 /* AlbumCollectionViewCell.swift */,
+				D377FEBC2D510CB1000540B4 /* AlbumCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D377FEA92D510677000540B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D3DEACE22D534F32009B80E9 /* AlbumScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D377FEAA2D510696000540B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D377FEAE2D5106E7000540B4 /* ProfileViewController.swift */,
+				D377FEAF2D5106E7000540B4 /* ProfileViewController.xib */,
+				D377FEB22D510B4B000540B4 /* AlbumTableViewCell.swift */,
+				D377FEB32D510B4B000540B4 /* AlbumTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D377FEAB2D51069E000540B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D3DEACDE2D533EA0009B80E9 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D377FEAC2D5106AA000540B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3DEACD32D5339F2009B80E9 /* UserModel.swift */,
+				D3DEACDA2D533DA8009B80E9 /* AlbumListModel.swift */,
+				D3DEACDC2D533E5A009B80E9 /* AlbumPhotosModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D377FEAD2D5106B3000540B4 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D3DEACD52D533A1A009B80E9 /* RemoteDataSource.swift */,
+				D3DEACE02D533EDB009B80E9 /* RemoteDataSourceProtocol.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +196,10 @@
 			dependencies = (
 			);
 			name = BostaTask;
+			packageProductDependencies = (
+				D3DEACD82D533AB3009B80E9 /* Alamofire */,
+				D3DEACE52D535631009B80E9 /* Kingfisher */,
+			);
 			productName = BostaTask;
 			productReference = D377FE8F2D5105A3000540B4 /* BostaTask.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +228,10 @@
 				Base,
 			);
 			mainGroup = D377FE862D5105A3000540B4;
+			packageReferences = (
+				D3DEACD72D533AB3009B80E9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D3DEACE42D535631009B80E9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D377FE902D5105A3000540B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +246,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D377FEBA2D510BFA000540B4 /* AlbumViewController.xib in Resources */,
 				D377FE9C2D5105A5000540B4 /* Assets.xcassets in Resources */,
 				D377FE9F2D5105A5000540B4 /* Base in Resources */,
+				D377FEB12D5106E7000540B4 /* ProfileViewController.xib in Resources */,
+				D377FEBE2D510CB1000540B4 /* AlbumCollectionViewCell.xib in Resources */,
+				D377FEB52D510B4B000540B4 /* AlbumTableViewCell.xib in Resources */,
 				D377FE9A2D5105A3000540B4 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +263,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D377FEB92D510BFA000540B4 /* AlbumViewController.swift in Sources */,
+				D377FEB42D510B4B000540B4 /* AlbumTableViewCell.swift in Sources */,
+				D3DEACE32D534F32009B80E9 /* AlbumScreenViewModel.swift in Sources */,
+				D3DEACD42D5339F2009B80E9 /* UserModel.swift in Sources */,
+				D3DEACE12D533EDB009B80E9 /* RemoteDataSourceProtocol.swift in Sources */,
+				D3DEACDB2D533DA8009B80E9 /* AlbumListModel.swift in Sources */,
 				D377FE972D5105A3000540B4 /* ViewController.swift in Sources */,
+				D3DEACD62D533A1A009B80E9 /* RemoteDataSource.swift in Sources */,
+				D3DEACDF2D533EA0009B80E9 /* ProfileViewModel.swift in Sources */,
 				D377FE932D5105A3000540B4 /* AppDelegate.swift in Sources */,
+				D377FEB02D5106E7000540B4 /* ProfileViewController.swift in Sources */,
 				D377FE952D5105A3000540B4 /* SceneDelegate.swift in Sources */,
+				D377FEBD2D510CB1000540B4 /* AlbumCollectionViewCell.swift in Sources */,
+				D3DEACDD2D533E5A009B80E9 /* AlbumPhotosModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +497,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3DEACD72D533AB3009B80E9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		D3DEACE42D535631009B80E9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3DEACD82D533AB3009B80E9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3DEACD72D533AB3009B80E9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D3DEACE52D535631009B80E9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3DEACE42D535631009B80E9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D377FE872D5105A3000540B4 /* Project object */;
 }
