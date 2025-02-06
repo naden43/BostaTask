@@ -22,7 +22,7 @@ class ProfileViewModel {
     
     func getUserData(userId:String){
         
-        networkManager?.fetchData(endPoint: "users/\(userId)", responseType: User.self) { [weak self] result in
+        networkManager?.fetchData(endPoint: .fetchUser(userId: userId), responseType: User.self) { [weak self] result in
             switch result {
             case .success(let user):
                 self?.user = user
@@ -35,13 +35,13 @@ class ProfileViewModel {
     }
     
     func getUserAlbums(userId:String) {
-        networkManager?.fetchData(endPoint: "users/\(userId)/albums", responseType: [Album].self) { [weak self] result in
+        networkManager?.fetchData(endPoint: .fetchAlbums(userId: userId), responseType: [Album].self) { [weak self] result in
             switch result {
             case .success(let albums):
                 self?.albums = albums
                 self?.albumsSignal()
             case .failure(let error):
-                print(error)
+                print("Error fetching albums: \(error.localizedDescription)")
             }
         }
     }

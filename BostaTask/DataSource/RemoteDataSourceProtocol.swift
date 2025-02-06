@@ -8,5 +8,5 @@
 import Foundation
 
 protocol RemoteDataSourceProtocol {
-    func fetchData<T: Decodable>(endPoint: String, responseType: T.Type, completion: @escaping (Result<T, Error>) -> Void)
+    func fetchData<T: Decodable>(endPoint: APIService, responseType: T.Type, completion: @escaping (Result<T, Error>) -> Void)
 }

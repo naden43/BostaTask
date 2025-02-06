@@ -23,14 +23,14 @@ class AlbumScreenViewModel {
     }
     
     func getPhotos(){
-        networkManager?.fetchData(endPoint: "albums/\(albumId ?? "1")/photos", responseType: [Photo].self) { [weak self] result in
+        networkManager?.fetchData(endPoint: .fetchPhotos(albumId: albumId ?? "1"), responseType: [Photo].self) { [weak self] result in
             switch result {
             case .success(let photos):
                 self?.photos = photos
                 self?.filteredPhoto = photos
                 self?.photosSignal()
             case .failure(let error):
-                print(error)
+                print("Error fetching photos: \(error.localizedDescription)")
             }
         }
     }

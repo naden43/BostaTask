@@ -6,25 +6,31 @@
 //
 
 import Foundation
-import Alamofire
+import Moya
 
 class NetworkManager: RemoteDataSourceProtocol {
 
+
+    let provider = MoyaProvider<APIService>()
     static let sharedInstance = NetworkManager()
     private init(){}
-    let basicURL = "https://jsonplaceholder.typicode.com/"
-    func fetchData<T: Decodable>(endPoint: String, responseType: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
-        
-        let url = basicURL + endPoint
-        AF.request(url, method: .get).validate().responseDecodable(of: T.self) { response in
-            switch response.result {
-            case .success(let data):
-                completion(.success(data))
-                
-            case .failure(let error):
-                completion(.failure(error))
+
+    func fetchData<T: Decodable>(endPoint: APIService, responseType: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
+            
+            provider.request(endPoint) { result in
+                switch result {
+                case .success(let response):
+                    do {
+                        let data = try response.map(T.self)
+                        completion(.success(data))
+                    } catch {
+                        completion(.failure(error))
+                    }
+                    
+                case .failure(let error):
+                    completion(.failure(error))
+                }
             }
         }
-    }
 }
 
