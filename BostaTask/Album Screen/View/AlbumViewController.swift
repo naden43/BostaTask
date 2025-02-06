@@ -40,7 +40,6 @@ class AlbumViewController: UIViewController , UICollectionViewDelegate , UIColle
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        print("bnb")
     }
     
     
@@ -60,6 +59,7 @@ class AlbumViewController: UIViewController , UICollectionViewDelegate , UIColle
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("hettrrre ")
         if searchText == "" {
             viewModel?.filteredPhoto = viewModel?.photos
             albumPhotos.reloadData()
@@ -69,5 +69,9 @@ class AlbumViewController: UIViewController , UICollectionViewDelegate , UIColle
             albumPhotos.reloadData()
         }
     }
-
+    
+    @IBAction func backToProfile(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
 }

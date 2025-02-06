@@ -38,11 +38,10 @@ class AlbumScreenViewModel {
     func filterPhotoDataByText(text:String) -> [Photo]{
         filteredPhoto?.removeAll()
         guard let photos = photos else {return []}
-        for photo in photos {
-            if photo.title.contains(text) {
-                filteredPhoto?.append(photo)
-            }
-        }
+         filteredPhoto = photos.filter { photo in
+             return photo.title.lowercased().contains(text.lowercased())
+         }
+        
         return filteredPhoto ?? []
     }
     

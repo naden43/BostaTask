@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxu-De-5FM">
-                    <rect key="frame" x="16" y="75" width="361" height="21"/>
+                    <rect key="frame" x="48" y="75" width="313" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -44,25 +44,40 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghn-re-Z3G">
+                    <rect key="frame" x="16" y="75" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="dK2-jW-HGL"/>
+                        <constraint firstAttribute="width" constant="32" id="wvY-bw-AYi"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="back"/>
+                    <connections>
+                        <action selector="backToProfile:" destination="-1" eventType="touchUpInside" id="RDf-Ac-5Pu"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="nxu-De-5FM" firstAttribute="leading" secondItem="Ghn-re-Z3G" secondAttribute="trailing" id="1vh-Ur-wh8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7mf-kE-oLz" secondAttribute="bottom" constant="16" id="4fe-RE-WhZ"/>
-                <constraint firstItem="nxu-De-5FM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8jr-Dm-f6R"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7mf-kE-oLz" secondAttribute="trailing" constant="16" id="9gy-2g-32W"/>
                 <constraint firstItem="7mf-kE-oLz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Gb7-Cy-Ey6"/>
                 <constraint firstAttribute="trailing" secondItem="7Ez-fj-3zK" secondAttribute="trailing" constant="32" id="V2f-6U-Ye3"/>
                 <constraint firstItem="7Ez-fj-3zK" firstAttribute="top" secondItem="nxu-De-5FM" secondAttribute="bottom" constant="32" id="W84-p7-zXb"/>
+                <constraint firstItem="Ghn-re-Z3G" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Zpf-5u-xPw"/>
                 <constraint firstItem="7Ez-fj-3zK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="fxr-Jr-Aqj"/>
                 <constraint firstItem="nxu-De-5FM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="iMT-Kc-0Mj"/>
                 <constraint firstItem="7mf-kE-oLz" firstAttribute="top" secondItem="7Ez-fj-3zK" secondAttribute="bottom" constant="32" id="iUH-Ar-i5m"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nxu-De-5FM" secondAttribute="trailing" constant="16" id="ypS-Di-X7h"/>
+                <constraint firstItem="Ghn-re-Z3G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="lHn-q6-obD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nxu-De-5FM" secondAttribute="trailing" constant="32" id="ypS-Di-X7h"/>
             </constraints>
             <point key="canvasLocation" x="15" y="-11"/>
         </view>
     </objects>
     <resources>
+        <image name="back" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
